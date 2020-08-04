@@ -1,0 +1,86 @@
+<!--
+    Seletor
+    Declaration block
+    property namve, property value
+
+    How does CSS actually works ?
+    When a browser displays a document, it must combine the document's content with its style information. It processes the document in two stages:
+
+    The browser converts HTML and CSS into the DOM (Document Object Model). The DOM represents the document in the computer's memory. It combines the document's content with its style.
+    The browser displays the contents of the DOM.
+
+
+Everything is called as node in DOM.
+
+
+1.Element Selector
+2.Class Selector
+3. Id selector
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My CSS experiment</title>
+
+    <style>
+        /*  Element selector */
+
+        h1 {
+             color: black;
+             background-color: grey;
+             border: 1px solid black;
+          }
+
+        p{
+            color: black;
+            border: 1px solid black;
+        }
+          /* Id Selector */
+        #para1 {
+            text-align: center;
+            color: orange;
+            font-size: 27px;
+            }
+        /*Class Selector*/
+        .note {
+            text-align: right;
+            color: red;
+            font-size: large;
+            border: 2px seagreen;
+        }
+        /*specifying inly selected elements will be affected by class*/
+        p.center {
+            text-align: center;
+            color: orange;
+        }
+
+        /*Grouping selectors*/
+        h3, h4, p {
+            text-align: center;
+            color: orange;
+        }
+
+    </style>
+
+    </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>This is an example</p>
+
+    <p id="para1">Demonstrating id Selector!</p>
+
+    <p class="note">Demonstrating Class selector</p>
+
+    <h1 class="center">This heading will not be affected</h1>
+
+    <p class="center">This paragraph will be orange and center-aligned.</p>
+
+    <!--Displaying grouping functionalities-->
+    <h3>Hello World!</h3>
+    <h4>Smaller heading!</h4>
+    <p>This is a paragraph. Here we are writing some unrelated content.</p>
+
+
+  </body>
+</html>
