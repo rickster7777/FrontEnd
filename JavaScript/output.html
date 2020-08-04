@@ -1,0 +1,38 @@
+<!--
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().   It's more convenient for testing purpose
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+-->
+
+<!doctype html>
+
+<html>
+
+<body>
+    <p>A paragraph to illustrate innerHTML </p>
+    <p id = "demo">A paragraph</p>
+    <script>
+        document.getElementById("demo").innerHTML = 9 + 9;
+
+    </script>
+    <p> Never call document . wite after document finished loading</p>
+    <script>
+        document.write(9+3);
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <!--code to display deletion caused by the write function. -->
+    <button type = "button" onclick = "myfunction()">Clicke me!</button>
+    <script>
+    function myfunction(){
+        document.write("content deleted");
+    }
+    window.alert(23 + 27);
+    </script>
+</body>
+
+</html>
