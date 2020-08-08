@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Function Invocation </title>
+
+<body>
+    <p id="demo"> </p>
+    <p id = "p1"> </p>
+    <script>
+        var x = operation(4, 3);
+        document.getElementById("demo").innerHTML = x + 10;
+        document.write(x);
+
+        function operation(a, b) {
+            return a * b;
+        }
+    </script>
+    <script>
+        document.getElementById("p1").innerHTML = "The temperature is " + toCelsius(89) + " Celsius";
+
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+    </script>
+</body>
+
+</html>
