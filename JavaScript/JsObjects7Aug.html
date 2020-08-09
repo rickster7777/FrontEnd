@@ -1,0 +1,51 @@
+<!--
+    8 august 2020
+    objectName.propertyName
+    or
+    objectName["propertyName"]
+
+    An object property name can be any valid JavaScript string, or anything that can be converted to a string, including the empty string.
+
+    OBJECTS ARE SOMETIMES REFFERED AS ASSOCIATIVE ARRAYS.
+    However, any property name that is not a valid JavaScript identifier (for example, a property name that has a space or a hyphen, or that
+    starts with a number) can only be accessed using the square bracket notation.
+-->
+
+<!DOCTYPE html>
+<html>
+<title>JS Objects</title>
+
+<body>
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+
+    <p id="p1"></p>
+    <script>
+        var car = { type: 'Ferrari', color: "Black", year: 2020 };
+
+        var myCar = new Object();
+        myCar.make = 'Ford';
+        myCar.model = 'Mustang';
+        myCar.year = 1969;
+
+        var person = {
+        firstName: "Sh",
+        lastName : "K ",
+        id    : 2222,
+        fullName : function() {
+            return this.firstName;
+        }
+        };
+
+        document.getElementById("demo").innerHTML = "Model is " + car.type + " and color is " + "<strong>" + car['color'] + "</strong>" + " manufactured year is " + car.year;
+
+        document.getElementById("demo1").innerHTML = myCar.make+" "+ myCar.model+" " + myCar.year ;
+
+
+
+        document.getElementById("p1").innerHTML = person.fullName();
+    </script>
+</body>
+
+</html>

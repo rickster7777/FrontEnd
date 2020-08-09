@@ -1,0 +1,29 @@
+<!--
+    Never declare nuber, String, Boolean as object.
+    whenever new keyword is used with a varable that variable is an Object.
+
+    object.create()
+-->
+<!DOCTYPE html>
+<html>
+    <title> Number, String, Boolean Object</title>
+    <body>
+        <p id = 'para1'> </p>
+        <p id = 'para2'> </p>
+        <script>
+            var num = new Number();
+            var str = new String();
+            var bool = new Boolean();
+
+            num.one = 1;
+            num.two = 2;
+
+            bool.fal = false;
+            bool.tru = true;
+
+            document.getElementById('para1').innerHTML = num.one + num.two;
+            document.getElementById('para2').innerHTML = bool.tru + bool.fal;
+
+        </script>
+    </body>
+</html>
