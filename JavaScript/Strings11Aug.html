@@ -1,0 +1,70 @@
+<!--
+    google escape sequences
+
+    /b : backspace
+    /r : carriage return
+    /n : newline
+    and manymore
+-->
+
+<!DOCTYPE html>
+<html>
+<title>Strings in Javascript. </title>
+
+<body>
+    <h2>Javascript Strings</h2>
+    <p id="demo"> </p>
+    <p id="p1"> </p>
+    <p id="p2"> </p>
+    <p id="p3"> </p>
+    <script>
+        var a = "It's alright";
+        var b = " 'she's called Jane' ";
+        var c = " \"she's called Jane\" ";
+        var d = 'The escape sequence \\ \'inserts a single quote in a string';
+        var e = 'The escape sequence \\ \\ inserts a backslash in a string';
+        var f = 'The character \\ is called backslash';
+        var linebreak = "<br>";
+
+        document.getElementById('demo').innerHTML = a + linebreak + b + linebreak + c +
+            linebreak + d + linebreak + e + linebreak + f;
+
+        /*JS Objects. and difference between == and  ===*/
+
+        var y = new String('rishav');
+        var x = new String('rishav');
+
+        document.getElementById('p1').innerHTML = x == y;
+        document.getElementById('p2').innerHTML = x === y;
+
+        /*String methods
+        indexOF()
+        lastindexOF()
+        search()
+        slice(start, end)
+        substring(start, end)
+        substr(start, length)
+        replace()
+        To replace case insensitive, use a regular expression with an /i flag (insensitive):
+        To replace all matches, use a regular expression with a /g flag (global match):
+
+        toUpperCase()
+        toLowerCase()
+
+        The charAt() method returns the character at a specified index (position) in a string:
+        The trim() method removes whitespaces from both sides of a string:
+
+        Both lines have the same output.
+        var text = "Hello" + " " + "World!";
+        var text = "Hello".concat(" ", "World!");
+
+
+        */
+        var alphabet = 'abcdefghijkl';
+        document.getElementById('p3').innerHTML = alphabet.length;
+
+
+    </script>
+</body>
+
+</html>
