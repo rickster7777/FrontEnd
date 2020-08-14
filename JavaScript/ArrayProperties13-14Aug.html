@@ -1,0 +1,54 @@
+<!--
+    Using delete may leave undefined holes in the array. Use pop() or shift() instead.
+
+-->
+<!DOCTYPE html>
+<html>
+<title>JS Array properties</title>
+
+<body>
+    <p id='demo'> </p>
+    <p id='p1'> </p>
+    <script>
+        var fruits = ['Apple', 'Bannana', 'Orange']
+        document.getElementById('demo').innerHTML = fruits.toString();
+        document.getElementById('p1').innerHTML = fruits.join(' * ');
+        document.write(fruits.pop());
+        fruits.push('cherry');
+        document.write('<br> <br>', fruits);
+    </script>
+    <script>
+        var myGirls = ["Cecilie", "Lone"];
+        var myBoys = ["Emil", "Tobias", "Linus"];
+        var myChildren = myGirls.concat(myBoys);
+        document.write('<br> <br>',myChildren.join(' '));
+
+        var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+        delete fruits1[0];
+        document.write('<br>',fruits1);
+
+        /*Shifts removes the first element  and pop last element*/
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var x = fruits.shift();
+        document.write('<br> shift operation ',x);
+
+        document.write('<br> <br> pop operation ',fruits.pop());
+        fruits.push("watermelon","grapes",1);
+        document.write('<br> <br>',fruits);
+
+        /*
+        The slice() method slices out a piece of an array into a new array.
+        The slice() method creates a new array. It does not remove any elements from the source array.
+        */
+
+        /*
+        The splice() method can be used to add new items to an array.
+        The splice() method returns an array with the deleted items.
+        */
+        fruits.splice(2, 0, "Lemon", "Kiwi");  //2 is the index ,0 is the elements to be removed after that values to be inserted.
+        document.write('<br><br>',fruits);
+
+    </script>
+</body>
+
+</html>
