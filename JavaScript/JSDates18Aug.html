@@ -1,0 +1,45 @@
+<!--
+    Both the code snippets will produce the same result.
+    When we display a date object in HTML, it is automatically converted to a string, with the toString() method.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DATES</title>
+</head>
+<body>
+<p id = "p1"> </p>
+<p id = "p2"> </p>
+<p id = "p3"> </p>
+<p id = "p4"> </p>
+<p id = "p5"> </p>
+<script>
+    var d = new Date();  // date object
+    document.getElementById('p1').innerHTML = d;
+
+    // toUTCString() Method
+    document.getElementById('p2').innerHTML = d.toUTCString();
+
+    //toDateString() Method
+    document.getElementById('p3').innerHTML = d.toDateString();
+
+    //  now()
+    var no =  Date.now();
+    document.getElementById('p4').innerHTML = no;
+
+    var msecs = Date.parse( "Sep 18, 2018 11:11:00" );
+    document.write( "Number of milliseconds from 1970: " + msecs );
+
+
+    /*check getDate methods*/
+    var date = new Date();
+    //document.getElementById("p5").innerHTML = date.getTime();
+    document.write("<br> <br>",date);
+
+    //git config core.autocrlf true
+</script>
+
+</body>
+</html>
