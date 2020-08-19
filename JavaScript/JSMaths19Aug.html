@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>JS Maths</title>
 </head>
 <body>
-$END$
+<p id = "pi"></p>
+<p id = "up"></p>
+<p id = "low"></p>
+<p id = "pow"></p>
+<p id = "sqrt"></p>
+<p id = "min"></p>
+<p id = "max"></p>
+
+<p id = "sine"></p>
+<script>
+/*
+Math and PI are case sensitive authorize authentic cumbersome catastrophic sensitise
+*/
+document.getElementById('pi').innerHTML = Math.PI;
+document.getElementById('up').innerHTML = Math.round(4.7);
+document.getElementById('low').innerHTML = Math.round(5.4);
+document.getElementById('sqrt').innerHTML = Math.sqrt(81);
+document.getElementById('max').innerHTML = Math.max(5, 2, 3, 1, 0, 9);
+document.getElementById('min').innerHTML = Math.min(100, 200, 300, 400, 500);
+
+document.getElementById('pow').innerHTML = Math.pow(8, 2);
+
+/*Same way for other trigonometric identities*/
+document.getElementById("sine").innerHTML =
+"The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+
+document.write("Ceil value of 9.9 :",Math.ceil(9.9));
+
+document.write("<br> <br>Floor value of 9.9 :",Math.floor(9.9));
+
+document.write("<br> <br>Generating a random number  ",Math.random());
+</script>
+/*
+Second  Module
+Search Maths Constant
+Unlike the other global objects, Math is not a constructor.
+All properties and methods of Math are static.
+*/
+<script>
+/*Math Constant*/
+document.write("<br>  <br>",Math.LN10, Math.Log2E, Math.Log10E);
+</script>
+
+<script>
+/**/
+var mathVal = Math.floor('f');
+document.write(<br>,mathVal);
+</script>
+
+
 </body>
 </html>
